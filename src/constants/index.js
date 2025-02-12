@@ -19,11 +19,17 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.jpg";
+import tripfox from "../assets/company/tripfox.png";
+import system from "../assets/company/Systemic Altruism.png";
+import turbo from "../assets/company/turbo digital.jpg";
+import mara from "../assets/company/mara.png";
 
 export const navLinks = [
   {
@@ -46,7 +52,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "AI Developer",
     icon: mobile,
   },
   {
@@ -54,7 +60,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Software Engineer",
     icon: creator,
   },
 ];
@@ -116,24 +122,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "Tripfox Travel",
+    icon: tripfox,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Dec 2023 - Feb 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and optimized a full-stack travel platform using React.js and Node.js, improving user engagement by 30%.",
+      "Collaborated with cross-functional teams to enhance UX, reduce load time by 40%, and boost user retention by 25%.",
+      "Implemented responsive design, ensuring seamless functionality across devices and cross-browser compatibility.",
+      "Leveraged MongoDB and Express.js for efficient data handling, improving backend performance by 25%.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Frontend Developer",
+    company_name: "Systemic Altruism",
+    icon: system,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Sep 2023 - Nov 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,8 +149,8 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Turbo Digital",
+    icon: turbo,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -155,16 +161,16 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Research Intern",
+    company_name: "University of Mara Malaysia",
+    icon: mara,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Nov 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conducted research on crystal plasticity modeling, simulating microstructural behavior using DAMASK.",
+      "Collaborated with faculty and researchers to develop computational models for predicting material deformation.",
+      "Implemented simulations to analyze slip systems, twinning, and grain boundary interactions for phase transformations.",
+      "Optimized microstructural modeling, achieving a 95% accuracy rate in predicting mechanical behavior.",
     ],
   },
 ];
@@ -172,35 +178,37 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "I've seen many young talents, but your ability to learn and grow at such a young age is truly impressive. Keep going—you have the potential to become one of the best engineers and tech experts.",
+    name: "Sumit Mendiratta",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "Procol io",
+    image:
+      "https://media.licdn.com/dms/image/v2/D5603AQEuQsdO6vTYig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707766746278?e=1744848000&v=beta&t=FvnNkgY9d8qHvur3BHvMiS-2epYfonldtuWqQVsODns",
+  },
+  {
+    testimonial:
+      "Your bug-finding skills are just amazing, and you are an SEO master, crafting beautiful and highly optimized websites. During Unfold 2024.",
+    name: "Nitin Vinayachandran",
+    designation: "Operational Head",
+    company: "Rabble Labs",
+    image:
+      "https://media.licdn.com/dms/image/v2/D5603AQGU0h-7CEVV1A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1672659353847?e=1744848000&v=beta&t=a1zihiVjIH4LCSltD9UZ_tvksnwJmyb2Fpo61OJlT-k",
+  },
+  {
+    testimonial:
+      "You are a true leader who not only takes the whole team together but also inspires and motivates them to achieve success through collaboration and innovation.",
+    name: "Dr. V.N. Manikand",
+    designation: "Assit. Professor",
+    company: "SRM University AP",
+    image: "https://srmap.edu.in/file/2020/03/Manikandan2.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Medical Automation System | SRM AP",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based system that automates appointment scheduling and medical record management, enhancing efficiency and reducing wait times for students and healthcare providers at SRM AP.",
     tags: [
       {
         name: "react",
@@ -211,24 +219,24 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Rest API",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: project1,
+    source_code_link: "https://github.com/HARSHSINGH3118/medical_automation",
   },
   {
-    name: "Job IT",
+    name: "FitFusion | Fitness Tracker  ",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that allows users to track fitness activities, monitor calorie expenditure, and analyze workout progress in real-time, providing personalized insights for a healthier lifestyle.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongoDB",
         color: "green-text-gradient",
       },
       {
@@ -236,29 +244,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: project2,
+    source_code_link: "https://github.com/HARSHSINGH3118/FitFussion",
   },
   {
-    name: "Trip Guide",
+    name: "Safe Click",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A browser extension that detects and blocks spam websites, protecting users from phishing attacks and malicious links while ensuring a safe and secure browsing experience.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "XGboost",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: project3,
+    source_code_link: "https://github.com/HARSHSINGH3118/SafeClick",
   },
 ];
 
